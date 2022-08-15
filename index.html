@@ -8,8 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
-    <script src="js/variables.js" defer></script>
-    <script src="js/domtest.js"></script>
+    <!-- <script src="js/variables.js" defer></script> -->
+    <script src="js/domtest.js" defer></script>
 </head>
 
 <body>
@@ -17,8 +17,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Jeg giver ikke H1 et class/id fordi der skal kun være en som jeg kan hente med tagName -->
-    <h1>test side</h1> 
+
+    <h1 id="headline">test side</h1> 
     <h2 class="smallHeadline">afsnit</h2>
     <p id="paragraph">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
         quam,
@@ -53,7 +53,7 @@
 
 
         <label id="rangeLabel">Range</label>
-        <input type="range" id="rangeLabel" >
+        <input type="range" id="rangeInput" >
 
         <input type="button" value="input Button" id="buttonInput">
 
@@ -63,7 +63,7 @@
 
         <input type="submit" value="Submit" id="submitInput">
 
-        <button>button</button id="button">
+        <button>button</button id="regButton">
 
         <label>Select</label id="selectLabel">
 
