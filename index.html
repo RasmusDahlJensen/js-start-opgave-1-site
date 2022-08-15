@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
     <script src="js/variables.js" defer></script>
+    <script src="js/domtest.js"></script>
 </head>
 
 <body>
@@ -16,9 +17,10 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <h1>test side</h1>
+        <!-- Jeg giver ikke H1 et class/id fordi der skal kun være en som jeg kan hente med tagName -->
+    <h1>test side</h1> 
     <h2 class="smallHeadline">afsnit</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
+    <p id="paragraph">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
         quam,
         feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
         ultricies
@@ -33,48 +35,48 @@
 
     <fieldset>
 
-        <legend>Forskellige inputs og interaktions muligheder</legend>
+        <legend id="inputTitle">Forskellige inputs og interaktions muligheder</legend>
 
-        <label>Month</label>
-        <input type="month">
+        <label id="monthLabel">Month</label>
+        <input type="month" id="monthInput">
 
-        <label><input type="checkbox" name="checkbox">Check</label>
+        <label id="checkboxLabel"><input id="checkbox" type="checkbox" name="checkbox">Check</label>
 
-        <label>Color</label>
-        <input type="color">
-
-
-        <label>radio buttons</label>
-        <label><input type="radio" name="radio">option 1</label>
-        <label><input type="radio" name="radio">option 2</label>
-        <label><input type="radio" name="radio">option 3</label>
+        <label id="colorLabel">Color</label>
+        <input type="color" id="colorInput">
 
 
-        <label>Range</label>
-        <input type="range">
-
-        <input type="button" value="input Button">
-
-
-        <input type="reset" value="Reset">
+        <label id="radioLabel">radio buttons</label>
+        <label id="radioLabel1"><input type="radio" name="radio" id="radioInput1">option 1</label>
+        <label id="radioLabel2"><input type="radio" name="radio" id="radioInput2">option 2</label>
+        <label id="radioLabel3"><input type="radio" name="radio" id="radioInput3">option 3</label>
 
 
-        <input type="submit" value="Submit" onclick="console.log('test')">
+        <label id="rangeLabel">Range</label>
+        <input type="range" id="rangeLabel" >
 
-        <button>button</button>
+        <input type="button" value="input Button" id="buttonInput">
 
-        <label>Select</label>
 
-        <select>
-            <optgroup label="first options">
-                <option>select 1</option>
-                <option>select 2</option>
-                <option>select 3</option>
+        <input type="reset" value="Reset" id="resetInput">
+
+
+        <input type="submit" value="Submit" id="submitInput">
+
+        <button>button</button id="button">
+
+        <label>Select</label id="selectLabel">
+
+        <select id="selectId">
+            <optgroup label="first options" class="optgroupClass">
+                <option>select 1</option class="optionClass">
+                <option>select 2</option class="optionClass">
+                <option>select 3</option class="optionClass">
             </optgroup>
-            <optgroup label="second options">
-                <option>select 4</option>
-                <option>select 5</option>
-                <option>select 6</option>
+            <optgroup label="second options" class="optgroupClass">
+                <option>select 4</option class="optionClass">
+                <option>select 5</option class="optionClass">
+                <option>select 6</option class="optionClass">
             </optgroup>
         </select>
 
